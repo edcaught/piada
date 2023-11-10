@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        aperta sim
+    </title>
+</head>
+<body> 
+    <h1>
+        Cu hoje?
+    </h1>
+    <a href="https://www.youtube.com/watch?v=d0J1OP3DJHg">
+    <button class="botao-comum botao-do-sim">
+        Sim
+    </button>
+    </a>
+    <button class="botao-comum botao-do-nao">
+        Nao
+    </button>
+    <script>
+        const botoesMoveis = document.querySelectorAll(".botao-do-nao");
+
+botoesMoveis.forEach(botao => {
+  botao.addEventListener("mouseover", () => {
+    const novaPosicaoX = Math.random() * (window.innerWidth - 200);
+    const novaPosicaoY = Math.random() * (window.innerHeight - 40);
+
+    botao.style.left = novaPosicaoX + "px";
+    botao.style.top = novaPosicaoY + "px";
+  });
+});
+    </script>
+</body>
+</html>

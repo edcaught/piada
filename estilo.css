@@ -1,0 +1,36 @@
+body{
+    background-color: blueviolet;
+}
+h1{
+    color: white;
+    position: absolute;
+    top: 220px;
+    left: 630px;
+}
+.botao-do-sim{
+    position: absolute;
+    top: 300px;
+    left: 530px;
+}
+.botao-do-nao{
+    position: absolute;
+    top: 300px;
+    left: 730px;
+}
+.botao-comum {
+    border: none;
+    border-radius: 20px;
+    width: 140px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    transition: opacity 0.3s;
+    }
+.botao-do-sim:hover {
+    transform: scale(2.2);
+    cursor: pointer;
+    opacity: 0.9;
+}
+.botao-do-sim:active{
+    opacity: 0.8;
+}
